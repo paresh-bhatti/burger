@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eat da Burger!</title>
+    <link rel="icon" href="/image/burger.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+        
+
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+  
+    <!-- Page Container -->
+    <div class="container">
+      
+      <br>
+      <center>
+        <div class="row">
+          <img src="/image/burger.jpg" width="100px" height="100px">
+        </div>
+      </center>
+
+      <center>
+        <h1 class="red_font">Eat da Burger!</h1>
+      </center>
+      <br>
+
+      <!-- Input Form -->
+      <form action="burger/create" method="POST"> 
+        
+        <div class="row">
+          <div class="col-md-3"></div> 
+
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="red_font">Place your order!</label></center>
+            <input id="new_burger" type="text"  class="form-control" name="burger_name" required>         
+          </div>
+
+          <div class="col-md-3"></div> 
+        </div>
+      
+        <!-- Submit -->
+        <center>
+          <button id="submit-button" type="submit" class="btn btn-success">Place Order</button>
+        </center>
+
+      </form>
+
+      <br>
+
+      <!-- Burger Content -->
+      {{{body}}}
+      <br><br>
+
+    </div>
+
+  </body>
+</html>
